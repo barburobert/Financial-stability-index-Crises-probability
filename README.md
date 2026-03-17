@@ -1,7 +1,7 @@
 # Financial Stability Indicator (FSI) – Quarterly Early-Warning Model
 
 ## Overview
-This project implements a quarterly early-warning Financial Stability Indicator (FSI) inspired by the EIB working paper framework. The model is estimated as a pooled logistic regression on a multi-country quarterly panel and is designed to identify periods of elevated financial vulnerability.
+This project implements a quarterly early-warning Financial Stability Indicator (FSI) inspired by the European Investment Bank 2019 working paper framework. The model is estimated as a pooled logistic regression on a multi-country quarterly panel and is designed to identify periods of elevated financial vulnerability.
 
 The specification predicts whether a crisis event will occur within the next 4 to 12 quarters, which approximates a 1–3 year early-warning horizon.
 
