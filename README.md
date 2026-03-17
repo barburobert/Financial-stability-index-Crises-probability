@@ -65,6 +65,26 @@ Main variables:
 - `HPIgrowth5Y`: five-year log change in residential property prices
 - `SharePricesgrowth2Y`: two-year log change in equity prices
 - `SharePricesQoQ`: quarterly equity price return, used to identify equity crash events
+- 
+### Variable Construction performed in EXCEL
+Construction details:
+
+- `CreditGDP` is used in level form.
+- `CreditGDPgrowth5Y` is constructed as a simple difference between the current quarter and the observation from 20 quarters earlier.
+- `HPIgrowth5Y` is constructed as the log difference between the current quarter and the observation from 20 quarters earlier, corresponding to a five-year horizon.
+- `SharePricesgrowth2Y` is constructed as the log difference between the current quarter and the observation from 8 quarters earlier, corresponding to a two-year horizon.
+- `SharePricesQoQ` is constructed as a simple quarter-over-quarter return:
+  
+  `P_t / P_{t-1} - 1`
+  
+### Data Sources
+
+The dataset combines information from two main public sources:
+
+- FRED: equity price series
+- BIS: credit-to-GDP and residential property price data (HPI)
+
+Equity price data were collected at monthly frequency and converted to quarterly frequency by retaining the last available monthly observation within each quarter.
 
 Panel identifiers:
 - `Country`
