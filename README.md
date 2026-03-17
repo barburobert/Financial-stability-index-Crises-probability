@@ -15,7 +15,50 @@ The purpose of the project is to:
 
 ## Data
 The model uses quarterly panel data across multiple countries.
+### Data Coverage and Country Selection
 
+The original intention was to match the country coverage used in the EIB Working Paper framework as closely as possible. However, due to data-availability constraints across the required variables, the final sample includes only the countries for which a sufficiently consistent quarterly dataset could be constructed.
+
+The final working sample covers 30 countries:
+
+- Australia
+- Austria
+- Belgium
+- Canada
+- Chile
+- Colombia
+- Czechia
+- Denmark
+- Finland
+- France
+- Germany
+- Greece
+- Hungary
+- Ireland
+- Israel
+- Italy
+- Japan
+- Korea
+- Mexico
+- Netherlands
+- New Zealand
+- Norway
+- Poland
+- Portugal
+- Spain
+- Sweden
+- Switzerland
+- Turkiye
+- United Kingdom
+- United States
+
+The following economies were not included in the final analytical sample due to insufficient data coverage across the required variables:
+- Croatia
+- Hong Kong
+- Luxembourg
+- Singapore
+
+The country selection follows the BIS classification of advanced economies, which provides the conceptual basis for the sample design.
 Main variables:
 - `CreditGDP`: credit-to-GDP ratio
 - `CreditGDPgrowth5Y`: five-year change in the credit-to-GDP ratio
